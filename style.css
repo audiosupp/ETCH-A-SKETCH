@@ -1,0 +1,20 @@
+:root {
+  --grid-cols: 1;
+  --gird-rows: 1;
+}
+
+#gridContainer {
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  font-size: 5px;
+  grid-template-rows: repeat(var(--grid-rows), 20px);
+  grid-template-columns: repeat(var(--grid-cols), 20px);
+}
+
+.gridItem {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
