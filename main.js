@@ -22,6 +22,10 @@ function gameplay() {
   makeRows(gridSize);
 }
 
+function clearBoard() {
+  makeRows(gridSize);
+}
+
 function colorSquare() {
   if (click) {
     if (color === "random") {
