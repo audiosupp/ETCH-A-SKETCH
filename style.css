@@ -1,17 +1,21 @@
-:root {
-  --grid-cols: 1;
-  --gird-rows: 1;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #gridContainer {
-  justify-content: center;
-  align-content: center;
   display: grid;
-  grid-template-rows: repeat(var(--grid-rows), 10px);
-  grid-template-columns: repeat(var(--grid-cols), 10px);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  border: 5px solid gray;
+  border-radius: 5px;
+  height: 500px;
+  width: 500px;
+  background-color: white;
 }
 
 .gridItem {
-  height: 10px;
-  width: 10px;
+  border: 0.5px dotted black;
 }
